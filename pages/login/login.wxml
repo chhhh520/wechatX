@@ -1,0 +1,22 @@
+<view class="container" style="background: {{themeColor}}">
+    <view class="remind-box" wx:if="{{remind}}">
+        <image class="remind-img" src="/image/login/loading.gif"></image>
+    </view>
+    <block wx:else>
+        <image class="title" src="/image/login/title8.png"></image>
+        <view class="content">
+            <view class="hd" style="transform:rotateZ({{angle}}deg);">
+                <view wx:if="{{canIUse}}">
+                    <open-data class="logo" type="userAvatarUrl"></open-data>
+                </view>
+                <image class="wave" mode="aspectFill" src="/image/login/wave.png"></image>
+                <image class="wave wave-bg" mode="aspectFill" src="/image/login/wave.png"></image>
+            </view>
+            <view class="bd">
+                <image class="smalltitle" src="/image/login/confirm-word1.png"></image>
+                <button bindgetuserinfo="bindGetUserInfo" class="confirm-btn" openType="getUserInfo" style="background: {{themeColor}}" wx:if="{{canIUse}}">进入首页</button>
+                <view class="confirm-btn" wx:else>请升级微信版本</view>
+            </view>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail/detail",
+    "pages/search/search",
+    "pages/searchResult/searchResult",
+    "pages/movie/movie",
+    "pages/photo/photo",
+    "pages/my/my",
+    "pages/my/setting/setting",
+    "pages/my/personInfo/personInfo",
+    "pages/my/editPersonInfo/editPersonInfo",
+    "pages/login/login",
+    "pages/photo/detail/detail",
+    "pages/golden/golden",
+    "pages/skin/skin"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "图册",
+        "iconPath": "image/tab/ciwei.png",
+        "selectedIconPath": "image/tab/ciwei_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "走马",
+        "iconPath": "image/tab/dianying.png",
+        "selectedIconPath": "image/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/golden/golden",
+        "text": "阅读",
+        "iconPath": "image/tab/yuedu.png",
+        "selectedIconPath": "image/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "image/tab/ciwei.png",
+        "selectedIconPath": "image/tab/ciwei_hl.png"
+      }
+    ]
+  }
+}

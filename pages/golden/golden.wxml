@@ -1,0 +1,15 @@
+<view>
+  <view class='title'>
+    <text class='title-text'>每日一污</text>
+  </view>
+  <view class='content'>
+    <text>{{randStr}}</text>
+  </view>
+  <view class='content'>
+    <!-- <canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas> -->
+    <image src="{{randImg}}"></image>
+  </view>
+  <view>
+    <button class='jinshouzhi' catchtap='onRandStrShow'>金手指</button>
+  </view>
+</view>

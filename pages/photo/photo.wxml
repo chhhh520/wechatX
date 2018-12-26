@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class="list">
+  <view class="{{index % 2 ? 'item-right' : 'item'}}" wx:for="{{infoList}}" wx:key=''>
+  <navigator url="../photo/detail/detail?id={{item.id}}" class="navigator-item">
+    <view class="img-wrap">
+      <image src="{{picUrl}}{{item.image_url}}" mode="widthFix"></image>
+      <view class="count">共{{item.imgs.length - 1}}张</view>
+    </view>
+    <view class="name"><text>{{item.name}}</text></view>
+    </navigator>
+  </view>
+ 
+</view>
+
+<view hidden="{{hidden}}" class="loading">
+  <view class="loadingTxt">..图片加载中..</view>
+</view>
+
+
+</view>
+
+<view class="displayNo" hidden="{{display}}">
+  ---------- 我是有底线的 ----------
+</view>

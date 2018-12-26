@@ -1,0 +1,2 @@
+@import "../../template/index/index-list.wxss";
+@import "../../template/nullTip/nullTip.wxss";

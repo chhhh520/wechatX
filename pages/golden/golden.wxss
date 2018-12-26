@@ -1,0 +1,33 @@
+
+.title{
+  padding: 30px 0 5px;
+  text-align: center;
+    background: #ffec00;
+    color: #ffec00;
+    border: none;
+    box-shadow: 5px 5px 0 #ffec00;
+    width: 150px;
+    margin-left: 30%;
+}
+.title-text{
+
+    font-size: 20px;
+}
+.content{
+  font-size: 20px;
+    border: 2px solid #333;
+    margin: 10px;
+    padding: 10px;
+    line-height: 30px;
+    text-align: center;
+}
+.jinshouzhi{
+      background: #000;
+    color: #ffec00;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 5px 5px 0 #ffec00;
+    width: 150px;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+<!--pages/view/view.wxml-->
+<view class="titles">
+  <text>{{names}}</text>
+</view>
+<view class="mbTxing">
+  <text>【温馨提示】点击查看大图还可存到手机作为屏保</text>
+</view>
+<import src="../../../wxParse/wxParse.wxml"/>
+<view class="viewMain">
+	<view class="content">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+	</view>
+  <view class="Guanzhu">
+        <label>-------- 匆匆过客 --------</label>
+        <block url="" wx:for="{{gzList}}" wx:key="" class="gzList" wx:for-item="g">
+            <image class="gzAuthor" src="{{g.avatar}}" mode="widthFix"></image>
+        </block>
+  </view>
+</view>
+
+<view class='zhuan'>
+  <button open-type="share">分享给群友或者好友</button>
+</view>
+<view class='nextPic'>
+  <view class='nextBt'>
+    <button bindtap='nextIc' disabled="{{disabled_1}}" data-id='{{vid}}' size="mini" class='z'>上一组</button>
+    <button bindtap='topIc' disabled="{{disabled_2}}" data-id='{{vid}}' size="mini" class='y'>下一组</button>
+  </view>
+  <view class='nextBg'></view>
+</view>
